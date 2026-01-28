@@ -22,7 +22,7 @@ class Seat
 
     public void bookticket()
     {
-        isbooked = trues
+        isbooked = true;
     }
 
     public decimal GetPrice(Movie movie, string showtime, int seatno)
