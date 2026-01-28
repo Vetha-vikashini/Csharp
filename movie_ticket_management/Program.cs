@@ -27,7 +27,7 @@ class Seat
 
     public decimal GetPrice(Movie movie, string showtime, int seatno)
     {
-        Show show = movie.shows.Find(s => s.showTime == showtime);
+        Show show = movie.shows.Find(s => s.showTime == showtime); //Find the show object with that showtime
         Seat seat = show.seats.Find(s => s.seatNumber == seatno);
 
         decimal Price = seat.price;
