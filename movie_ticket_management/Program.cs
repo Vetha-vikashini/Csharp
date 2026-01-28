@@ -84,6 +84,11 @@ class Movie
 
     public void addShow(string time, int total_seats, decimal price)
     {
+        if (shows.Exists(s => s.showTime == time))
+        {
+            Console.WriteLine("Show with same time already exists");
+            return;
+        }
         Show newshow = new Show(time, total_seats, price);
         shows.Add(newshow);
     }
@@ -100,9 +105,23 @@ class MovieManager   //This class is Parent class or Owns other class like Movie
     }
 
     public void AddMovie(string name, int id)
-    {
-        Movie newMovie = new Movie(name, id); // Creating object for movie class
-        movies.Add(newMovie); // Add reference of that object to the list
+    {   
+
+        bool status= movies.Exists(m => m.m_id == id); // Checking if movie with same id already exists
+
+        if (!status)
+        {
+            Movie newMovie = new Movie(name, id); // Creating object for movie class
+
+            movies.Add(newMovie); // Add reference of that object to the list
+
+            return;
+        }
+
+        else
+        {
+            Console.WriteLine("Movie with same ID already exists");
+        }
 
     }
 }
