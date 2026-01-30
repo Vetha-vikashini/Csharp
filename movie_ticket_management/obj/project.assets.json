@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vsk986\\source\\repos\\movie_ticket_management\\movie_ticket_management\\movie_ticket_management.csproj",
-      "projectName": "movie_ticket_management",
-      "projectPath": "C:\\Users\\vsk986\\source\\repos\\movie_ticket_management\\movie_ticket_management\\movie_ticket_management.csproj",
+      "projectUniqueName": "C:\\Users\\vsk986\\source\\repos\\movie_ticket_management\\movie_ticket_management\\MovieManagement.csproj",
+      "projectName": "MovieManagement",
+      "projectPath": "C:\\Users\\vsk986\\source\\repos\\movie_ticket_management\\movie_ticket_management\\MovieManagement.csproj",
       "packagesPath": "C:\\Users\\vsk986\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\vsk986\\source\\repos\\movie_ticket_management\\movie_ticket_management\\obj\\",
       "projectStyle": "PackageReference",
