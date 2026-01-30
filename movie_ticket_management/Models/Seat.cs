@@ -3,7 +3,7 @@
 class Seat
 {
     public int SeatNumber { get; private set; }
-    public bool IsBooked { get; private set; }
+    public bool IsBooked { get; private set; }  // encapsulation
     public decimal Price { get; private set; }
 
     public Seat(int number, decimal price)
@@ -13,8 +13,8 @@ class Seat
         IsBooked = false;
     }
 
-    public void Book()
+    public void Book()    // method to book the seat
     {
-        IsBooked = true;
+        IsBooked = true; 
     }
 }

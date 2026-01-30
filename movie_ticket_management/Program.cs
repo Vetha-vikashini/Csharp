@@ -11,7 +11,7 @@ class Program
 {
     static void Main()
     {
-        MovieManager manager = new MovieManager();
+        MovieManager manager = new MovieManager();  // Single instance of MovieManager
         BookingService bookingService = new BookingService();
 
         while (true)

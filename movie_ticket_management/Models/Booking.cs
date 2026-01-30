@@ -2,7 +2,7 @@
 
 namespace MovieTicketBooking.Models;
 
-class Booking
+class Booking    // stores the details of user bookings
 {
     public string MovieTitle { get; set; }
     public TimeSpan ShowTime { get; set; }
