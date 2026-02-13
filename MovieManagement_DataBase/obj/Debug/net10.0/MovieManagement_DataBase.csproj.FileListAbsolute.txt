@@ -61,3 +61,4 @@ C:\Users\vsk986\source\repos\MovieManagement_DataBase\MovieManagement_DataBase\o
 C:\Users\vsk986\source\repos\MovieManagement_DataBase\MovieManagement_DataBase\obj\Debug\net10.0\MovieManagement_DataBase.pdb
 C:\Users\vsk986\source\repos\MovieManagement_DataBase\MovieManagement_DataBase\obj\Debug\net10.0\MovieManagement_DataBase.genruntimeconfig.cache
 C:\Users\vsk986\source\repos\MovieManagement_DataBase\MovieManagement_DataBase\obj\Debug\net10.0\ref\MovieManagement_DataBase.dll
+C:\Users\vsk986\source\repos\MovieManagement_DataBase\MovieManagement_DataBase\obj\Debug\net10.0\MovieManagement_DataBase.sourcelink.json

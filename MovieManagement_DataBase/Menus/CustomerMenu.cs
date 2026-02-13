@@ -36,7 +36,8 @@ namespace MovieTicketBooking.Menus
                 }
 
                 //LINQ: get selected show
-                var selectedShow = shows.SingleOrDefault(s => s.ShowId == showId);
+                var selectedShow = shows.SingleOrDefault(s => s.ShowId == showId);   // Returns the match if it found only once or 
+                                                            // null if not found match  or Thro error if found more than one match
 
                 if (selectedShow == null)
                 {
@@ -71,8 +72,17 @@ namespace MovieTicketBooking.Menus
                 //LINQ: Calculate total
                 decimal totalAmount = selectedSeats.Count * selectedShow.Price;
                 string seatNumbers = string.Join(",", selectedSeats);
-
-                bookingService.Book(user.UserId, showId, seatNumbers, selectedShow.Price);
+                Console.WriteLine($"You Total amount: {totalAmount}");
+                Console.Write("Is it ok to continue(Yes or No): ");
+                string msg = Console.ReadLine().ToUpper().Trim();
+                if (msg == "YES")
+                {
+                    bookingService.Book(user.UserId, showId, seatNumbers, selectedShow.Price);
+                }
+                else
+                {
+                    Console.WriteLine("Ok... Going Back....");
+                }
             }
             catch (Exception e)
             {

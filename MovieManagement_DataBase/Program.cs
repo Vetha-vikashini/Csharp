@@ -13,8 +13,8 @@ class Program
         Console.WriteLine("1.Login  2.Register");
         var ch = Console.ReadLine();
 
-        if (ch == "2")
-        {
+        if (ch == "2")   // For new user
+        { 
             Console.Write("Username: ");
             string name = Console.ReadLine()!;
             Console.Write("Password: ");
@@ -40,7 +40,7 @@ class Program
             Console.WriteLine("Registration successful. Please login.");
         }
 
-        Console.Write("Username: ");
+        Console.Write("Username: ");    // When user hit Login, directly contol comes here
         string username = Console.ReadLine()!;
         Console.Write("Password: ");
         string password = Console.ReadLine()!;

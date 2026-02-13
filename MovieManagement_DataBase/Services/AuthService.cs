@@ -30,9 +30,9 @@ namespace MovieTicketBooking.Services
         public void Register(string username, string password,string role)
         {
             using var con = DbConnection.Get();
-            var cmd = new SqlCommand("sp_RegisterUser", con);
+            var cmd = new SqlCommand("sp_RegisterUser", con);  // calling Stored procedure sp_RegisterUser
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@username", username); // passing values
             cmd.Parameters.AddWithValue("@password", password);
             cmd.Parameters.AddWithValue("@Role", role.Trim());
 
